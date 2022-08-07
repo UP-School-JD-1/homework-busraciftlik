@@ -2,12 +2,23 @@ public class Point {
     int x ;
     int y;
 
+    double distanceFromOrigin;
+    public Point(){
+        this(0,0);
+    }
+
+    public Point(int x, int y){
+        this.x = x;
+        this.y = y;
+        this.distanceFromOrigin = this.distanceFromOrigin();
+    }
+
     int getX(){
-        return x;
+        return this.x;
     }
 
     int getY(){
-        return y;
+        return this.y;
     }
     void setX(int x){
         this.x = x;
@@ -24,11 +35,11 @@ public class Point {
     }
 
     double distanceBetweenPoints(Point otherPoint){
-      double distance = 0;
-      int squareX = (this.x - otherPoint.x)*(this.x - otherPoint.x);
-      int squareY = (this.y - otherPoint.y)*(this.y - otherPoint.y);
-      distance = Math.sqrt(squareX+squareY);
-      return distance;
+        double distance = 0;
+        int squareX = (this.x - otherPoint.x)*(this.x - otherPoint.x);
+        int squareY = (this.y - otherPoint.y)*(this.y - otherPoint.y);
+        distance = Math.sqrt(squareX+squareY);
+        return distance;
     }
 
     public Point clone (){
