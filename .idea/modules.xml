@@ -3,15 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/homeworks.iml" filepath="$PROJECT_DIR$/homeworks.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch02/hw03.iml" filepath="$PROJECT_DIR$/ch02/hw03.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch03/hw04.iml" filepath="$PROJECT_DIR$/ch03/hw04.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch04/hw05.iml" filepath="$PROJECT_DIR$/ch04/hw05.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch05/hw06.iml" filepath="$PROJECT_DIR$/ch05/hw06.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch06/hw07.iml" filepath="$PROJECT_DIR$/ch06/hw07.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch08/hw09.iml" filepath="$PROJECT_DIR$/ch08/hw09.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch09/hw10.iml" filepath="$PROJECT_DIR$/ch09/hw10.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw03/hw03.iml" filepath="$PROJECT_DIR$/hw03/hw03.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw04/hw04.iml" filepath="$PROJECT_DIR$/hw04/hw04.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw05/hw05.iml" filepath="$PROJECT_DIR$/hw05/hw05.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw06/hw06.iml" filepath="$PROJECT_DIR$/hw06/hw06.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw07/hw07.iml" filepath="$PROJECT_DIR$/hw07/hw07.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw09/hw09.iml" filepath="$PROJECT_DIR$/hw09/hw09.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw10/hw10.iml" filepath="$PROJECT_DIR$/hw10/hw10.iml" />
       <module fileurl="file://$PROJECT_DIR$/hw11/hw11.iml" filepath="$PROJECT_DIR$/hw11/hw11.iml" />
-      <module fileurl="file://$PROJECT_DIR$/ch12/hw13.iml" filepath="$PROJECT_DIR$/ch12/hw13.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hw13/hw13.iml" filepath="$PROJECT_DIR$/hw13/hw13.iml" />
     </modules>
   </component>
 </project>

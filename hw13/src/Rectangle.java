@@ -14,6 +14,7 @@ class Rectangle extends Shape {
 
     @Override
     double calculateCircumference() {
+        area = height*weight;
         return super.calculateCircumference();
     }
 

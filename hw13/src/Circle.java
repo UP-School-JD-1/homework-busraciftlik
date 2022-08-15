@@ -1,9 +1,5 @@
-class Square extends Shape{
-    double edge;
-    @Override
-    void draw() {
-        super.draw();
-    }
+class Circle extends Shape {
+    int diameter;
 
     @Override
     void erase() {
@@ -11,7 +7,13 @@ class Square extends Shape{
     }
 
     @Override
+    void draw() {
+        super.draw();
+    }
+
+    @Override
     double calculateArea() {
+        area = 2*diameter*Math.PI;
         return super.calculateArea();
     }
 
