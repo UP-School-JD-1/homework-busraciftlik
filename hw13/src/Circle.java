@@ -1,24 +1,28 @@
 class Circle extends Shape {
-    int diameter;
+    int radius;
 
+    Circle(int radius){
+        this.radius = radius;
+    }
     @Override
     void erase() {
-        super.erase();
+        System.out.println("Circle erased");
     }
 
     @Override
     void draw() {
-        super.draw();
+        System.out.println("Circle drawn");
     }
 
     @Override
     double calculateArea() {
-        area = 2*diameter*Math.PI;
-        return super.calculateArea();
+        super.area = Math.PI * radius * radius;
+        return super.area;
     }
 
     @Override
     double calculateCircumference() {
-        return super.calculateCircumference();
+        super.circumference = 2 * Math.PI * radius;
+        return circumference;
     }
 }

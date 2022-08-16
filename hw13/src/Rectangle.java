@@ -2,24 +2,31 @@ class Rectangle extends Shape {
     int height;
     int weight;
 
+    Rectangle(int weight , int height){
+        this.weight = weight;
+        this.height = height;
+    }
+
     @Override
     void draw() {
-        super.draw();
+        System.out.println("Rectangle drawn" );
     }
 
     @Override
     void erase() {
-        super.erase();
+        System.out.println("Rectangle erased");
     }
 
     @Override
     double calculateCircumference() {
-        area = height*weight;
-        return super.calculateCircumference();
+       super.circumference = 2*(height+weight);
+       return super.circumference;
     }
 
     @Override
     double calculateArea() {
-        return super.calculateArea();
+        super.area = height*weight;
+        return super.area;
+
     }
 }
