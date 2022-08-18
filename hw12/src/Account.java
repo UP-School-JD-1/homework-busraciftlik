@@ -1,8 +1,10 @@
 public class Account {
 
-    double balance ;
-    protected int accountNo ;
-    protected String accountType ; // bunu enum yapmayı düşün
+    
+    // 3 de private yapıldı , dışarıdan kontrolsüz değiştirilmesi istenmiyor.
+    private double balance ;  
+    private int accountNo ;
+    private String accountType ; // bunu enum yapmayı düşün
     
     // 2 consructor
     
@@ -36,6 +38,20 @@ public class Account {
         return balance; // güncel bakiyeyi döner
     }
 
+    
+    public double getBalance(){
+        return this.balance;
+    }
+    
+    public int getAccountNo(){
+        return this.accountNo;
+    }
+    
+    public String getAccountType(){
+        return this.accountType;
+    }
+    
+    
     /*
     Bu metot kapatıldı çünkü şu anda zaten 1 account objesinin içindeyiz, objeyle konuşuyoruz. 
     tek 1 account objesi vermemiz yeterli olurdu. kendisiyle onun arasında havale gibi.
