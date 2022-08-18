@@ -15,7 +15,7 @@ public class Account {
     }
     
     public Account(int accountNo, String accountType) {
-        this(accountNo,accountType,0)
+        this(accountNo,accountType,0);
     }
         
         
@@ -24,7 +24,7 @@ public class Account {
         if(amount > balance){
             throw new RuntimeException("Yetersiz bakiye");
         } else if (amount < 0){
-            throw new RuntimeExcetion("Pozitif bir değer giriniz")
+            throw new RuntimeException("Pozitif bir değer giriniz");
         }
         balance -= amount; // hesap bakiyesini amount kadar azaltır
         return amount; // çekilmek istenen miktarı döner, dönmese de olurdu
@@ -32,7 +32,7 @@ public class Account {
 
     public double depositMoney(double amount){
         if (amount < 0){
-            throw new RuntimeExcetion("Pozitif bir değer giriniz")
+            throw new RuntimeException("Pozitif bir değer giriniz");
         }
         balance += amount;
         return balance; // güncel bakiyeyi döner

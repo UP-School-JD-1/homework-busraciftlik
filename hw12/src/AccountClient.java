@@ -1,4 +1,4 @@
-public class AccountClient extends Account {
+public class AccountClient {
 
     
     /*
@@ -38,12 +38,12 @@ public class AccountClient extends Account {
     }
     
     
-    public double withrawMoney(Account account,double amount) {
-        account.withrawMoney(amount);
+    public double withdrawMoney(Account account,double amount) {
+       return account.withdrawMoney(amount);
     }
     
     public double depositMoney(Account account, double amount){
-        account.depositMoney(amount);
+      return  account.depositMoney(amount);
     }
     
     
