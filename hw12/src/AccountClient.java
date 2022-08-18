@@ -1,5 +1,11 @@
 public class AccountClient extends Account {
 
+    
+    /*
+    bu istemcide biz account ile ilgili  gerekli servisi hizmeti sağlayacağız 
+    
+    o yüzden clientName gibi field'lara ihtiyacımız yok bu class durumsuz stateles bir servis hizmet sınıfı gibi çalışacak.
+    
     String clientName;
     String clientSurname;
     int clientNo;
@@ -9,51 +15,40 @@ public class AccountClient extends Account {
         this.clientSurname = clientSurname;
         this.clientNo = clientNo;
     }
-
-    public double getBalance() {
-        return balance;
-    }
-
-    public String getClientName() {
-        return clientName;
-    }
-
-    public String getClientSurname() {
-        return clientSurname;
-    }
-
-    public int getClientNo() {
-        return clientNo;
-    }
-
-    void setClientName(String clientName) {
-        this.clientName = clientName;
-    }
-
-    public void setClientSurname(String clientSurname) {
-        this.clientSurname = clientSurname;
-    }
-
-    public void setClientNo(int clientNo) {
-        this.clientNo = clientNo;
-    }
-
-    @Override
-    public void depositMoney() {
-        if (balance != 0) {
-            System.out.println("money deposited");
+    */
+    
+    private double clientBalance;
+    private static final double COMMISSION_RATE = 0.05;
+    
+    
+    
+    public boolean remit(Account creditor,Account borrower, double amount){
+        if(creditor.getBalance() < amount) {
+            System.out.println("Yetersiz bakiye");
+            return false;
         }
+        double commission = amount * COMMISSION_RATE;
+        clientBalance += commission;
+        
+        double netAmount = amount - commission;
+        
+        creditor.withdrawMoney(amount);
+        borrower.depositMoney(netAmount);
+        return true;
     }
+    
+    
+    public double withrawMoney(Account account,double amount) {
+        account.withrawMoney(amount);
+    }
+    
+    public double depositMoney(Account account, double amount){
+        account.depositMoney(amount);
+    }
+    
+    
 
-    @Override
-    public void withdrawMoney() {
-        System.out.println("money was taken");
-    }
-
-    @Override
-    public void remit(Account account , Account account1) {
-        double remittanceFee ;
-    }
+    
 }
 
 
