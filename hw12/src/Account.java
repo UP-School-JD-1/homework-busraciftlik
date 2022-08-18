@@ -52,15 +52,6 @@ public class Account {
     }
     
     
-    /*
-    Bu metot kapatıldı çünkü şu anda zaten 1 account objesinin içindeyiz, objeyle konuşuyoruz. 
-    tek 1 account objesi vermemiz yeterli olurdu. kendisiyle onun arasında havale gibi.
-    
-    ama bu işlemi burada değil account client da yapmak daha sağlıklı. orada yapılacak
-    
-    public void remit(Account account , Account account1){
-            
-    }
-    */
+
 }
 
