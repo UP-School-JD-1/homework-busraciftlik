@@ -7,4 +7,19 @@ public class UndergraduateStudent extends Student{
         super(no, name, year, dob, major);
         this.minor = minor;
     }
+
+    @Override
+    void study() {
+        super.study();
+    }
+
+    @Override
+    void register() {
+        super.register();
+    }
+
+    @Override
+    public String toString() {
+        return super.toString();
+    }
 }
