@@ -1,6 +1,6 @@
 import java.util.Date;
 
-public class Student {
+public abstract class Student {
     int no;
     String name;
     int year;
@@ -15,13 +15,9 @@ public class Student {
         this.major = major;
     }
 
-    void study() {
+    abstract void study();
 
-    }
-
-    void register(){
-
-    }
+    abstract void register();
 
     @Override
     public String toString() {

@@ -1,21 +1,19 @@
 import java.util.Date;
 
-public class UndergraduateStudent extends Student{
-    String minor;
+public class VocationalStudent extends Student{
 
-    UndergraduateStudent(int no, String name, int year, Date dob, String major , String minor) {
+    VocationalStudent(int no, String name, int year, Date dob, String major) {
         super(no, name, year, dob, major);
-        this.minor = minor;
     }
 
     @Override
     void study() {
-        super.study();
+        System.out.println("study");
     }
 
     @Override
     void register() {
-        super.register();
+        System.out.println("register");
     }
 
     @Override

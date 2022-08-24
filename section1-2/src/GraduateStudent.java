@@ -13,12 +13,13 @@ public class GraduateStudent extends Student {
 
     @Override
     void study() {
-        super.study();
+        System.out.println("Graduated");
+
     }
 
     @Override
     void register() {
-        super.register();
+        System.out.println("graduation ceremony");
     }
 
     void writeThesis(){
