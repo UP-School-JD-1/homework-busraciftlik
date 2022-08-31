@@ -2,27 +2,22 @@ import java.util.Date;
 
 public class MasterStudent extends GraduateStudent{
 
-    MasterStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis) {
-        super(no, name, year, dob, major, advisor, thesis);
+    MasterStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis, double undergraduateGraduationGrade) {
+        super(no, name, year, dob, major, advisor, thesis,undergraduateGraduationGrade);
     }
 
     @Override
     void study() {
-        super.study();
-    }
-
-    @Override
-    void register() {
-        super.register();
+        System.out.println("Master student is studying.");
     }
 
     @Override
     void writeThesis() {
-        super.writeThesis();
+        System.out.println("writing master thesis");
     }
 
     @Override
-    void meetWithAdvisor() {
-        super.meetWithAdvisor();
+    public String toString() {
+        return "MasterStudent{}";
     }
 }

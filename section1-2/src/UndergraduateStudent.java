@@ -20,6 +20,8 @@ public class UndergraduateStudent extends Student{
 
     @Override
     public String toString() {
-        return super.toString();
+        return "UndergraduateStudent{" +
+                "minor='" + minor + '\'' +
+                '}';
     }
 }

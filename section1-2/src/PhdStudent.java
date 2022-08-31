@@ -3,32 +3,32 @@ import java.util.Date;
 public class PhdStudent extends GraduateStudent{
     boolean qualifyingExamTaken ;
 
-    PhdStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis , boolean qualifyingExamTaken) {
-        super(no, name, year, dob, major, advisor, thesis);
+    PhdStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis , boolean qualifyingExamTaken, double undergraduateGraduationGrade) {
+        super(no, name, year, dob, major, advisor, thesis,undergraduateGraduationGrade);
         this.qualifyingExamTaken = qualifyingExamTaken;
+
     }
 
     @Override
     void study() {
-        super.study();
-    }
 
-    @Override
-    void register() {
-        super.register();
+        System.out.println("Study hard");
     }
 
     @Override
     void writeThesis() {
-        super.writeThesis();
-    }
 
-    @Override
-    void meetWithAdvisor() {
-        super.meetWithAdvisor();
+        System.out.println("writing phd thesis");
     }
 
     void writePaper(){
+        System.out.println("Writing paper");
+    }
 
+    @Override
+    public String toString() {
+        return "PhdStudent{" +
+                "qualifyingExamTaken=" + qualifyingExamTaken +
+                '}';
     }
 }

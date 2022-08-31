@@ -1,32 +1,39 @@
 import java.util.Date;
 
-public class GraduateStudent extends Student {
+public abstract class GraduateStudent extends Student {
 
     String advisor;
     String thesis;
+    double undergraduateGraduationGrade;
 
-    GraduateStudent(int no, String name, int year, Date dob, String major , String advisor , String thesis) {
+    GraduateStudent(int no, String name, int year, Date dob, String major, String advisor, String thesis, double undergraduateGraduationGrade) {
         super(no, name, year, dob, major);
         this.advisor = advisor;
         this.thesis = thesis;
-    }
-
-    @Override
-    void study() {
-        System.out.println("Graduated");
-
+        this.undergraduateGraduationGrade = undergraduateGraduationGrade;
     }
 
     @Override
     void register() {
-        System.out.println("graduation ceremony");
+        if(undergraduateGraduationGrade >= 2.50){
+            System.out.println("Successfully register");
+        }else{
+            System.out.println("Graduation grade is not sufficient for register ");
+        }
     }
 
-    void writeThesis(){
+   abstract void writeThesis();
 
+    void meetWithAdvisor() {
+        System.out.println("Meeting with advisor");
     }
 
-    void meetWithAdvisor(){
-
+    @Override
+    public String toString() {
+        return "GraduateStudent{" +
+                "advisor='" + advisor + '\'' +
+                ", thesis='" + thesis + '\'' +
+                ", undergraduateGraduationGrade=" + undergraduateGraduationGrade +
+                '}';
     }
 }

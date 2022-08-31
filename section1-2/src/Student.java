@@ -1,6 +1,7 @@
 import java.util.Date;
 
-public abstract class Student {
+public abstract class Student{
+
     int no;
     String name;
     int year;
@@ -21,6 +22,12 @@ public abstract class Student {
 
     @Override
     public String toString() {
-        return super.toString();
+        return "Student{" +
+                "no=" + no +
+                ", name='" + name + '\'' +
+                ", year=" + year +
+                ", dob=" + dob +
+                ", major='" + major + '\'' +
+                '}';
     }
 }
