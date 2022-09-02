@@ -1,14 +1,11 @@
 public abstract class Product {
     String sku;
     String description;
-    double price;
-    double tax;
 
-    Product(String sku, String description, double price, double tax) {
+
+    Product(String sku, String description) {
         this.sku = sku;
         this.description = description;
-        this.price = price;
-        this.tax = tax;
     }
 
     String getSku() {
@@ -27,20 +24,5 @@ public abstract class Product {
         this.description = description;
     }
 
-    double getPrice() {
-        return price;
     }
 
-    void setPrice(double price) {
-        this.price = price;
-    }
-
-    double getTax() {
-        return tax;
-    }
-
-    void setTax(double tax) {
-        this.tax = tax;
-    }
-
-}
