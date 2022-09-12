@@ -28,7 +28,7 @@ public class Manager extends Employee{
     }
 
     @Override
-    public double calculateSalary(){
+    public double calculateSalary() throws SalaryPaidOnBankException {
         return super.calculateSalary() + MANAGEMENT_PAYMENT;
     }
 

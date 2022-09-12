@@ -23,7 +23,7 @@ public class Employee{
         System.out.println("Employee is working!");
     }
 
-    public double calculateSalary(){
+    public double calculateSalary() throws SalaryPaidOnBankException {
         return year * BASE_SALARY ;
     }
 

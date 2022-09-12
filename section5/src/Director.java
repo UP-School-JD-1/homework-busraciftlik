@@ -12,7 +12,6 @@ public class Director extends Manager {
         manage();
     }
 
-    @Override
     public void manage(){
         System.out.println("Director manages whole company!");
         makeAStrategicPlan();
@@ -22,8 +21,7 @@ public class Director extends Manager {
         System.out.println("Director makes a strategic plan for the company!");
     }
 
-    @Override
-    public double calculateSalary(){
+    public double calculateSalary() throws SalaryPaidOnBankException {
         return super.calculateSalary() + bonus;
     }
 
@@ -33,4 +31,3 @@ public class Director extends Manager {
                 + name + ", year=" + year + ", department=" + department + "]";
     }
 }
-
