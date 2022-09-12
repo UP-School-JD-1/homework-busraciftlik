@@ -17,6 +17,7 @@ public class FoodProduct extends Product implements Locatable,Priceable{
 
     @Override
     public double getTax() {
+
         return 0;
     }
 
@@ -31,8 +32,7 @@ public class FoodProduct extends Product implements Locatable,Priceable{
     }
 
     @Override
-    public void purchase() {
-
+    public void purchase(){
     }
 
     @Override
