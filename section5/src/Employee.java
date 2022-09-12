@@ -4,7 +4,7 @@ public class Employee{
     protected int year;
     protected String department;
 
-    public static final int BASE_SALARY = 5000;
+    public static final int BASE_SALARY = 500;
 
     public Employee(int no, String name, int year, String department){
         this.no = no;
@@ -24,6 +24,11 @@ public class Employee{
     }
 
     public double calculateSalary() throws SalaryPaidOnBankException {
+
+        if(year * BASE_SALARY>7000){
+            throw new SalaryPaidOnBankException(year*BASE_SALARY,"Salary of the employee cannot exceed 7000 TL");
+        }
+
         return year * BASE_SALARY ;
     }
 
