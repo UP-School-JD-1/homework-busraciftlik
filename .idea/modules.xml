@@ -13,11 +13,10 @@
       <module fileurl="file://$PROJECT_DIR$/hw11/hw11.iml" filepath="$PROJECT_DIR$/hw11/hw11.iml" />
       <module fileurl="file://$PROJECT_DIR$/hw12/hw12.iml" filepath="$PROJECT_DIR$/hw12/hw12.iml" />
       <module fileurl="file://$PROJECT_DIR$/hw13/hw13.iml" filepath="$PROJECT_DIR$/hw13/hw13.iml" />
-      <module fileurl="file://$PROJECT_DIR$/section1-2/section1-2.iml" filepath="$PROJECT_DIR$/section1-2/section1-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/section1-2-9/section1-2-9.iml" filepath="$PROJECT_DIR$/section1-2-9/section1-2-9.iml" />
       <module fileurl="file://$PROJECT_DIR$/section3/section3.iml" filepath="$PROJECT_DIR$/section3/section3.iml" />
       <module fileurl="file://$PROJECT_DIR$/section5/section5.iml" filepath="$PROJECT_DIR$/section5/section5.iml" />
       <module fileurl="file://$PROJECT_DIR$/section8/section8.iml" filepath="$PROJECT_DIR$/section8/section8.iml" />
-      <module fileurl="file://$PROJECT_DIR$/section9/section9.iml" filepath="$PROJECT_DIR$/section9/section9.iml" />
     </modules>
   </component>
 </project>

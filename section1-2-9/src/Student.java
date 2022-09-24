@@ -1,7 +1,8 @@
+import java.lang.Comparable;
+
 import java.util.Date;
 
-public abstract class Student{
-
+public abstract class Student implements Comparable<Student> {
     int no;
     String name;
     int year;
@@ -29,5 +30,15 @@ public abstract class Student{
                 ", dob=" + dob +
                 ", major='" + major + '\'' +
                 '}';
+    }
+    @Override
+    public int compareTo(Student student){
+        if (student.no < this.no) {
+            return 1;
+        } else if (student.no == this.no) {
+            return 0;
+        } else {
+            return -1;
+        }
     }
 }
