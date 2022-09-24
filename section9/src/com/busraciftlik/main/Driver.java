@@ -1,5 +1,6 @@
 package com.busraciftlik.main;
 
+import com.busraciftlik.domain.PersonService;
 import com.busraciftlik.model.Address;
 import com.busraciftlik.model.Person;
 
@@ -14,8 +15,11 @@ public class Driver {
         }
         System.out.println();
 
-    }
+        PersonService personService = new PersonService(people);
+        //System.out.println("found person :" + personService.findByLastName("Yılmaz"));
+        System.out.println("found person :" +personService.findByLastName("Çiftlik"));
 
+    }
     public static TreeSet<Person> createPersonList(){
         TreeSet<Person> persons = new TreeSet<Person>();
         Person person = new Person("Büşra","Çiftlik",new Address("Kocaeli","Türkiye","41100",2),"05111111");
@@ -32,5 +36,7 @@ public class Driver {
         persons.add(person4);
         persons.add(person5);
         return persons;
+
     }
+
 }
