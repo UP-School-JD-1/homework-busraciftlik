@@ -23,6 +23,24 @@ public class PersonService {
         throw new PersonNotFoundException();
     }
 
+    public Person findByFirstName(String firstName){
+        for(Person person : people) {
+            if(person.getFirstName().equals(firstName)) {
+                return person;
+            }
+        }
+        throw new PersonNotFoundException();
+    }
+
+    public Person findByLastName(String lastName){
+        for(Person person : people) {
+            if(person.getLastName().equals(lastName)) {
+                return person;
+            }
+        }
+        throw new PersonNotFoundException();
+    }
+
 
 
 }
